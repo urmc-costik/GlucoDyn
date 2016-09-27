@@ -185,9 +185,9 @@ String.prototype.repeat = function (num) {
     var $slider = $('#carb_sensitivity_slider');
     if ($slider.length > 0) {
       $slider.slider({
-        min: 1,
-        max: 100,
-        step: 0.5,
+        min: 50,
+        max: 200,
+        step: 1,
         value: userdata.sensf,
         orientation: 'horizontal',
         range: false,
@@ -211,7 +211,7 @@ String.prototype.repeat = function (num) {
       $slider.slider({
         min: 1,
         max: 6,
-        step: 1.0,
+        step: 0.25,
         value: userdata.idur,
         orientation: 'horizontal',
         range: false,
