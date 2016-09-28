@@ -450,7 +450,7 @@ function addEventHistory() {
     description = "<span id='amount_label_" + event_id +"'>" + event.units + "</span> U insulin input";
     description_b = "Taken @ min <span id='time_label_" + event_id +"'>"+ event.time +"</span>"
   } else if (event.etype=="tempbasal") {
-    description = "" + event.dbdt + " U/min temp basal input";
+    description = "" + event.dbdt + " U/hr temp basal input";
     description_b = "From min "+ event.t1 +" to min "+ event.t2 +""
   }           
               

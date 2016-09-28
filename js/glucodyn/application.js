@@ -313,9 +313,9 @@ String.prototype.repeat = function (num) {
     var $slider = $('#tempbasal_amount_slider');
     if ($slider.length > 0) {
       $slider.slider({
-        min: -0.2,
-        max: 0.2,
-        step: 0.001,
+        min: 0,
+        max: 5.0,
+        step: 0.01,
         value: 0,
         orientation: 'horizontal',
         range: "min",
@@ -333,8 +333,8 @@ String.prototype.repeat = function (num) {
       $slider.slider({
         min: 0,
         max: simt,
-        step: 30,
-        values: [0, 30],
+        step: 5,
+        values: [0, 5],
         orientation: 'horizontal',
         range: true,
         slide: function (event, ui) {

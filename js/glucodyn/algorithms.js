@@ -112,6 +112,7 @@ function cob(g,ct) {
 }
     
 function deltatempBGI(g,dbdt,sensf,idur,t1,t2) {
+  dbdt = dbdt/60;
   return -dbdt*sensf*((t2-t1)-1/100*intIOB(t1,t2,idur,g));
 }
 
